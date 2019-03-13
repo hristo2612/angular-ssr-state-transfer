@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "angular-ssr-state-transfer",
+    "staging": "ng-ssr-state-transfer"
+  }
+}
