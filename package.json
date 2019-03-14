@@ -10,6 +10,7 @@
     "build": "ng build --prod && ng run angular-ssr-state-transfer:server && npm run copy-to-public",
     "copy-to-public": "rm -rf ./public && cp -R functions/dist/browser . && mv ./browser public && mv ./public/index.html ./public/index2.html",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
+    "deploy": "npm run build && firebase deploy",
     "e2e": "protractor"
   },
   "private": true,
